@@ -1,14 +1,59 @@
 </nav>
-{% block content %} {% endblock %}
+
+{% block content %}
+{% endblock %}
+
 <!-- Pié de página -->
 <footer class="footer text-faded text-center py-5">
+</footer>
 
 {% extends 'core/base.html' %}
 {% load static %}
 {% block title %}Inicio{% endblock %}
+
 {% block content %}
- <!-- Cabecera -->
- <section class="page-section clearfix">...</section>
- <!-- Mensaje -->
- <section class="page-section cta">...</section>
+    <!-- Cabecera -->
+    <section class="page-section clearfix">...</section>
+
+    <!-- Mensaje -->
+    <section class="page-section cta">...</section>
 {% endblock %}
+
+<!-- Navegación -->
+<a class="navbar-brand text-uppercase text-expanded d-lg-none" href="{% url 'home' %}">La Caffettiera</a>
+<div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav mx-auto">
+        <li class="nav-item px-lg-4
+            {% if request.path == '/' %}active{% endif %}">
+            <a class="nav-link text-uppercase text-expanded"
+                href="{% url 'home' %}">Inicio</a>
+        </li>
+        <li class="nav-item px-lg-4
+            {% if request.path == '/about/' %}active{% endif %}">
+            <a class="nav-link text-uppercase text-expanded"
+                href="{% url 'about' %}">Historia</a>
+        </li>
+            <li class="nav-item px-lg-4
+            {% if request.path == '/services/' %}active{% endif %}">
+            <a class="nav-link text-uppercase text-expanded"
+                href="{% url 'services' %}">Servicios</a>
+        </li>
+        <li class="nav-item px-lg-4
+            {% if request.path == '/store/' %}active{% endif %}">
+            <a class="nav-link text-uppercase text-expanded"
+                href="{% url 'store' %}">Visítanos</a>
+        </li>
+        <li class="nav-item px-lg-4
+            {% if request.path == '/contact/' %}active{% endif %}">
+            <a class="nav-link text-uppercase text-expanded"
+                href="{% url 'contact' %}">Contacto</a>
+        </li>
+        <li class="nav-item px-lg-4
+            {% if request.path == '/blog/' %}active{% endif %}">
+            <a class="nav-link text-uppercase text-expanded"
+                href="{% url 'blog' %}">Blog</a>
+        </li>
+       </ul>
+       
+
+       
