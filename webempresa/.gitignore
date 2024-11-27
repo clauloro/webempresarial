@@ -1,0 +1,3 @@
+# Ignorar cualquier otro archivo de configuración JSON sensible. Información sensible que no debe ser incluida en el repositorio.
+email_settings.json
+*.settings.json

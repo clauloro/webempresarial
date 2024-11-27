@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
+import json
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -150,3 +152,27 @@ CKEDITOR_CONFIGS = {
 	]
 	}
 }
+
+
+EMAIL_SETTINGS_FILE = os.path.join(BASE_DIR, 'email_settings.json')
+
+# Verifica si el archivo existe.
+if os.path.exists(EMAIL_SETTINGS_FILE):
+	with open(EMAIL_SETTINGS_FILE) as f:
+			email_settings = json.load(f)
+
+	EMAIL_HOST = email_settings['EMAIL_HOST']
+	EMAIL_HOST_USER = email_settings['EMAIL_HOST_USER']
+	EMAIL_HOST_PASSWORD = email_settings['EMAIL_HOST_PASSWORD']
+	EMAIL_PORT = email_settings['EMAIL_PORT']
+
+else:
+	# En Vercel se han definido las variables de entorno.
+	EMAIL_HOST = os.getenv('EMAIL_HOST')
+	EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+	EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+	EMAIL_PORT = os.getenv('EMAIL_PORT')
+
+# Verifica si todas las variables están definidas
+if not all([EMAIL_HOST, EMAIL_HOST_USER, EMAIL_HOST_PASSWORD, EMAIL_PORT]):
+    raise ValueError("Faltan variables de entorno necesarias para la configuración de correo")
