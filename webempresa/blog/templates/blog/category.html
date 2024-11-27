@@ -15,8 +15,9 @@
                         {{post.title}}</span>
                 </h2>
                 <p class="mb-0">
-                    <img class="mx-auto d-flex img-fluid mb-3 mblg-0"
-                        src="{{post.image.url}}" alt="">
+                    {% if post.image %}
+                        <img class="mx-auto d-flex img-fluid mb-3 mblg-0" src="{{post.image.url}}" alt="">
+                    {% endif %}
                 </p>
                 <p class="mb-0 mbt">{{post.content}}</p>
                 <p class="mb-0 mbt">
