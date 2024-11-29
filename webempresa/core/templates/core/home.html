@@ -10,10 +10,10 @@
 					<img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'core/img/intro.jpg' %}" alt="">
 					<div class="intro-text left-0 text-center bg-faded p-5 rounded">
 						<h2 class="section-heading mb-4">
-							<span class="section-heading-upper">Déjate sorprender</span>
-							<span class="section-heading-lower">Te gustará</span>
+							<span class="section-heading-upper">Amor por las Mascotas</span>
+							<span class="section-heading-lower">Cuidamos de Ellos, Contigo</span>
 						</h2>
-						<p class="mb-3">Trabajamos sólo con los mejores ingredientes. Una vez lo pruebes, nuestro café será la mejor forma de empezar tu rutina diaria.
+						<p class="mb-3">Encuentra todo lo que necesitas para consentir a tu compañero de vida. Juntos haremos que cada momento sea especial.
 						</p>
 						<div class="intro-button mx-auto">
 							<a href="{% url 'store' %}" class="btn btn-primary">Visítanos</a>
@@ -23,20 +23,38 @@
 			</div>
 		</section>
 
-		<!-- Mensaje -->
+		<!-- Sección Promociones -->
 		<section class="page-section cta">
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-9 mx-auto">
 						<div class="cta-inner text-center rounded">
 							<h2 class="section-heading mb-4">
-								<span class="section-heading-upper">Compromiso total</span>
+								<span class="section-heading-upper">¡Promociones Especiales!</span>
 								<span class="section-heading-lower">Garantizado</span>
 							</h2>
-							<p class="mb-0">Sed pulvinar blandit elit id venenatis. Ut eget lacus neque. Nullam justo quam, efficitur nec turpis vitae, efficitur posuere ligula. Proin ut turpis orci. Aenean porta sodales lectus faucibus pellentesque. In sed felis iaculis, rhoncus felis a, maximus mi.</p>
+							<!-- Promoción 1 -->
+							<div class="promotion">
+								<h3 class="mb-3">¡Black Friday para Mascotas!</h3>
+								<p class="mb-0">Aprovecha descuentos de hasta el <strong>50%</strong> en productos seleccionados. Solo del 24 al 30 de noviembre.</p>
+							</div>
+							<hr>
+							<!-- Promoción 2 -->
+							<div class="promotion">
+								<h3 class="mb-3">3x2 en Pienso para Gatos</h3>
+								<p class="mb-0">Compra 2 sacos de pienso y llévate el tercero gratis. Oferta válida hasta el 15 de diciembre.</p>
+							</div>
+							<hr>
+							<!-- Promoción 3 -->
+							<div class="promotion">
+								<h3 class="mb-3">Especial Navidad</h3>
+								<p class="mb-0">Regalos únicos para tu mascota desde 9,99 €. ¡Celebra con ellos estas fiestas!</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-{% endblock %}
+		
+	{% endblock %}
+							
