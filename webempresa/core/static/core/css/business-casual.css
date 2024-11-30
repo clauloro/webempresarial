@@ -1,6 +1,6 @@
 body {
-  font-family: 'Lora';
-  background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/bg.jpg");
+  font-family: 'Poppins', sans-serif; /* Cambié a Poppins, una sans-serif moderna */
+  background: url("../img/bg.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -38,12 +38,13 @@ p {
 }
 
 .site-heading .site-heading-lower {
-  font-size: 4rem;            /* Un tamaño de fuente grande, similar al del logo de Kiwoko */
-  font-weight: 700;           /* Un peso más grueso (negrita) para que el texto se destaque más */
-  line-height: 3.5rem;        /* Espaciado de línea más pequeño para hacer que el texto sea más compacto */
-  color: #E12901;             /* Rojo brillante similar al color del logo de Kiwoko */
-  font-family: 'Arial', sans-serif; /* Fuente sans-serif similar a la del logo de Kiwoko */
+  font-size: 4rem;               /* Tamaño grande y destacado */
+  font-weight: 800;              /* Negrita para resaltar */
+  line-height: 3.5rem;           /* Espaciado más compacto */
+  color: #E12901;                /* Rojo vibrante del logo de Kiwoko */
+  font-family: 'Nunito', sans-serif; /* Fuente redondeada para imitar el estilo */
 }
+
 
 
 .page-section {
@@ -83,7 +84,7 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   font-family: 'Raleway';
 }
 
@@ -241,7 +242,7 @@ p {
 }
 
 .footer {
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .text-primary {

@@ -1,6 +1,6 @@
 {% extends 'core/base.html' %}
 {% load static %}
-{% block title %}Blog{% endblock %}
+{% block title %}Animales{% endblock %}
 
 {% block content %}
 	{% for post in posts %}
@@ -15,17 +15,17 @@
 							</h2>
 							<p class="mb-0">
 								{% if post.image %}
-								<img class="mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{{post.image.url}}" alt="">
+								<img class="mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{{post.image.url}}" alt="" style="width: 700px;height: 300px; object-fit: cover;">
 								{% endif %}
 							</p>
-							<p class="mb-0 mbt">
-								{{post.content|linebreaks}}
+							<p class="mb-0 mbt" style="text-align: left;">
+								{{post.content|safe}}
 							</p>
 							<p class="mb-0 mbt">
 								<span class="section-heading-under">
-									Publicado por <em><b>{{post.author}}</b></em> en
+									Publicado por <em><b class="texto-usuario">{{post.author}}</b></em> en
 									{% for category in post.categories.all %}
-										<a href="{% url 'category' category.id %}" class="link">{{category.name}}</a>
+										<a href="{% url 'category' category.id %}" class="link" style="color: #1B305B;" onmouseover="this.style.color='black'" onmouseout="this.style.color='#1B305B'">{{category.name}}</a>
 									{% endfor %}
 								</span>
 							</p>
