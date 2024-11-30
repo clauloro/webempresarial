@@ -38,10 +38,13 @@ p {
 }
 
 .site-heading .site-heading-lower {
-  font-size: 5rem;
-  font-weight: 100;
-  line-height: 4rem;
+  font-size: 4rem;            /* Un tamaño de fuente grande, similar al del logo de Kiwoko */
+  font-weight: 700;           /* Un peso más grueso (negrita) para que el texto se destaque más */
+  line-height: 3.5rem;        /* Espaciado de línea más pequeño para hacer que el texto sea más compacto */
+  color: #E12901;             /* Rojo brillante similar al color del logo de Kiwoko */
+  font-family: 'Arial', sans-serif; /* Fuente sans-serif similar a la del logo de Kiwoko */
 }
+
 
 .page-section {
   margin-top: 5rem;
@@ -85,7 +88,7 @@ p {
 }
 
 #mainNav .navbar-brand {
-  color: #e6a756;
+  color: #E12901;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -94,7 +97,7 @@ p {
 }
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
-  color: #e6a756;
+  color: #E12901;
 }
 
 @media (min-width: 992px) {
@@ -105,7 +108,7 @@ p {
     color: rgba(255, 255, 255, 0.4);
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-    color: #e6a756;
+    color: #E12901;
   }
 }
 
@@ -150,7 +153,8 @@ p {
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: rgba(230, 167, 86, 0.9);
+  background-color: rgba(225, 41, 1, 0.9);
+  ;
 }
 
 .cta .cta-inner {
@@ -222,7 +226,7 @@ p {
 
 .list-hours .list-hours-item.today {
   font-weight: bold;
-  color: #e6a756;
+  color: #E12901;
 }
 
 @media (min-width: 992px) {
@@ -241,11 +245,11 @@ p {
 }
 
 .text-primary {
-  color: #e6a756 !important;
+  color: #E12901 !important;
 }
 
 .bg-primary {
-  background-color: #e6a756 !important;
+  background-color: #E12901 !important;
 }
 
 .btn {
@@ -253,13 +257,13 @@ p {
 }
 
 .btn-primary {
-  background-color: #e6a756;
-  border-color: #e6a756;
+  background-color: #E12901;
+  border-color: #E12901;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #df902a;
-  border-color: #df902a;
+  background-color: #E12901;
+  border-color: #E12901;
 }
 
 .font-weight-light {
@@ -279,12 +283,12 @@ p {
 }
 
 a.link{
-  color: #df902a;
+  color: #E12901;
 }
 
 a.link:hover{
   text-decoration: none;
-  color: #e6a756 !important;
+  color: #E12901 !important;
 }
 
 .section-content{
@@ -299,3 +303,4 @@ ul.errorlist{
   font-style: italic;
   color: red;
 }
+
