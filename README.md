@@ -30,6 +30,6 @@ Puedes visitar nuestra web en [[www.kiwoko.com](https://webempresarial-nine.verc
 
 ## 📝 Repositorio
 
-1. **Link repositorio:** git clone https://github.com/tu-usuario/kiwoko-web.git](https://github.com/clauloro/webempresarial.git
+1. **Link repositorio:** https://github.com/clauloro/webempresarial.git
    
 2. **Usuario:** clauloro
